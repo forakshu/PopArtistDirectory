@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/concertinfoimage">
+
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Concert Information page"
+        android:id="@+id/concertPage"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffff2025"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/concert_info"
+        android:id="@+id/concertName"
+        android:layout_below="@+id/concertPage"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffffff" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/concert_address"
+        android:id="@+id/concertAddress"
+        android:layout_below="@+id/concertName"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_centerInParent="true"
+        android:textColor="#ff3ae922" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/concert_number"
+        android:id="@+id/concertCall"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/concertName"
+        android:onClick="onClick"
+        android:background="#ffffffff"
+        android:elegantTextHeight="false"
+        android:textColor="#ffff161f"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
